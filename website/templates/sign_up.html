@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %}
+
+{% block container %}
+<h1>Welcome To ToDoer!!</h1>
+<form method="POST">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="password1" class="form-label">Password</label>
+      <input name="password1" type="password" class="form-control" id="password1" placeholder="Enter a Password" required>
+      <div id="emailHelp" class="form-text"><strong>Keep your password safe! If you lose it, you lose your account!</strong></div>
+    </div>
+    <div class="mb-3">
+        <label for="password2" class="form-label">Confirm password</label>
+        <input name="password2" type="password" class="form-control" id="password2" placeholder="Confirm your password" required>
+      </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+    <div class="m-2">
+        <a href="/login">Already Have An Account?</a>
+    </div>
+  </form>
+{% endblock %}

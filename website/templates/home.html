@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{% block container %}
+<br/>
+<h1>Home</h1>
+<br/>
+<div class="row row-cols-1 row-cols-md-2 g-5">
+    <div class="col">
+      <div class="card">
+        <img src="https://media.discordapp.net/attachments/831123721473359872/841326088847360041/note.png?width=719&height=390" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Notes</h5>
+          <p class="card-text">You can add notes or delete them here!</p>
+          <a class="btn btn-primary" href="/notes" role="button">Go to notes</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://media.discordapp.net/attachments/831123721473359872/841327027894222868/to_do.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Todo list</h5>
+          <p class="card-text">Want to keep track of your tasks, you can do that</p>
+          <a class="btn btn-primary" href="/todo" role="button">Go to ToDo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://media.discordapp.net/attachments/831123721473359872/841327624101822484/to_do.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Credits</h5>
+          <p class="card-text">Want to see who built this? Check out this section!!</p>
+          <a class="btn btn-primary" href="/credits" role="button">Go to Credits</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://media.discordapp.net/attachments/831123721473359872/841328245763866655/to_do.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Source Code</h5>
+          <p class="card-text">Want to see the source code of this project and how was it built? see this section</p>
+          <a class="btn btn-primary" href="/credits" role="button">Github repo of this project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
