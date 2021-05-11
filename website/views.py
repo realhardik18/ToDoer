@@ -47,3 +47,7 @@ def delete_note():
 
     return jsonify({})
 
+@views.errorhandler(401)
+def not_found(e):
+  return render_template('custom_page.html'), 401
+
