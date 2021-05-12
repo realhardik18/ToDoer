@@ -1,5 +1,6 @@
 from flask import Blueprint,render_template,request,flash,jsonify
 from flask_login import login_required,current_user
+from sqlalchemy.sql.functions import user
 from .models import Note
 from . import db
 import json
@@ -46,6 +47,12 @@ def delete_note():
             db.session.commit()
 
     return jsonify({})
+
+@views.route("/faq")
+@login_required
+def faq():
+    return render_template("faq.html")
+
 
 @views.errorhandler(401)
 def not_found(e):
